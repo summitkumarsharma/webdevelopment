@@ -1,0 +1,8 @@
+db
+show dbs
+use sumit
+db.text
+db.text.insert({})
+show dbs
+show collections
+db.text.insert({"name":"sumit"})

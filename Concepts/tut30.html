@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+        
+        @media only screen and (min-width:360px) and (max-width: 640px) {
+            #box-1 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+        
+        @media only screen and (min-width: 411px) and (max-width:731px) {
+            #box-2 {
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+        
+        @media only screen and (min-width: 411px) and (max-width:823px) {
+            #box-3 {
+                display: block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+        
+        @media only screen and (min-width: 320px) and (max-width:568px) {
+            #box-4 {
+                display: block;
+                background-color: green;
+            }
+        }
+        
+        @media (min-width:800px) {
+            #box-5 {
+                display: block;
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">Mai ek Moto G4 aur Galaxys5 hoon</div>
+    <div class="box" id="box-2">Mai ek pixel 2 hoon</div>
+    <div class="box" id="box-3">Mai ek Pixel 2 XL hoon</div>
+    <div class="box" id="box-4">Mai ek iphone hoon</div>
+    <div class="box" id="box-5">Mai ek Desktop Computer hoon</div>
+</body>
+
+</html>
