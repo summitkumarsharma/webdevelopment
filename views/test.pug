@@ -1,0 +1,67 @@
+
+doctype html
+html
+  head
+    title Sumit Dance Academy
+    style
+      include ../static/test.css
+      
+body
+    div.container
+        div#navbar
+            div#logo 
+                img(src="/static/img/logo.png")
+                | HDA
+            ul
+                li #[a(href="/") Home]
+                li #[a(href="/") About Us]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Contact Us]
+        div#introsection
+            div Welcome to Sumit Dance Academy
+            div.small Eat Sleep Dance Repeat
+        div#missionsection
+            h2 Our Mission 
+            div.card-cont
+                div.card1.card 
+                    h3 Dance Perfection
+                    div.card-box 
+                        div.card-img 
+                            img(src="/static/img/1.png")
+                        div.card-content 
+                            p This is the best dance academy of the universe 
+                            
+                div.card2.card
+                    h3 Dance the way you like
+                    div.card-box 
+                        div.card-img 
+                            img(src="/static/img/2.png")
+                        div.card-content 
+                            p This is the best dance academy of the universe 
+                               
+                div.card3.card
+                    h3 Expert Teaching
+                    div.card-box 
+                        div.card-img 
+                            img(src="/static/img/3.png")
+                        div.card-content 
+                            p This is the best dance academy of the universe   
+                            
+
+        div#sponsorsection
+            h2 Our Sponsors
+            div#sponsors-cont 
+                div.spImage-box
+                    img(src="/static/img/logo1.png",alt="Sponsor Image",class="spImage")
+                div.spImage-box
+                    img(src="/static/img/logo2.png",alt="Sponsor Image",class="spImage")
+                div.spImage-box
+                    img(src="/static/img/logo3.png",alt="Sponsor Image",class="spImage")
+                div.spImage-box
+                    img(src="/static/img/logo4.png",alt="Sponsor Image",class="spImage")
+        footer#footer
+            | Copyright @2020 SumitDanceAcademy.com | All rights reserved
+        
+    script
+      include ../static/index.js
